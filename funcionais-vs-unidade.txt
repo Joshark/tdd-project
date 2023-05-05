@@ -1,0 +1,2 @@
+Teste funcionais trabalham em testes mais alto nível enquanto testes de unidade são mais baixo nível e básico. 
+Testes de unidade são usados para ajudar a escrever código limpo e sem bugs enquanto os funcionais são para construir a aplicação com funcionalidades corretas
