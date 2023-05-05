@@ -7,10 +7,14 @@ options.binary_location = r"C:/Program Files/Mozilla Firefox/firefox.exe"
 
 class NewVisitorTest(unittest.TestCase):
 
-  def test_can_start_a_list_and_retrieve_it_later(self): 
-  
+  def setUp(self):
     self.browser = webdriver.Firefox(options=options)
 
+  def tearDown(self):
+    self.browser.quit()
+
+  def test_can_start_a_list_and_retrieve_it_later(self): 
+  
     # Maria decidiu utilizar o novo app TODO. Ela entra em sua página principal:
     self.browser.get('http://localhost:8000')
 
@@ -36,7 +40,5 @@ class NewVisitorTest(unittest.TestCase):
 
     # Satisfeita, ela vai dormir
     
-    self.browser.quit()
-
 if __name__ == '__main__':
   unittest.main()
