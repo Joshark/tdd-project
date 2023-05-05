@@ -1,0 +1,1 @@
+O processo na imagem indica  que escrevemos testes funcionais primeiros, quando ela não passar ou quando a aplicação necessitar de refatoração então escrevemos testes de unidades e verificamos a aplicação por eles, depois disso que vamos então escrever o mínimo de código necessário para a aplicação para que os testes passam e depois refatoramos.
